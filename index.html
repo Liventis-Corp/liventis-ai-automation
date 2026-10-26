@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#002F5C">
+  <meta name="description" content="LIVENTIS AI & AUTOMATION. Automatización e inteligencia artificial para empresas que quieren optimizar procesos, reducir carga operativa y mejorar su eficiencia.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LIVENTIS AI & AUTOMATION | Automatización e IA para empresas">
+  <meta property="og:description" content="Analizamos procesos, priorizamos oportunidades y diseñamos automatizaciones con criterio empresarial.">
+  <title>LIVENTIS AI & AUTOMATION | Automatización e IA para empresas</title>
+  <style>
+    :root{
+      --navy:#002F5C;
+      --navy-deep:#071827;
+      --navy-soft:#103E67;
+      --ink:#182331;
+      --gold:#D2B551;
+      --gold-soft:#E4CE83;
+      --bg:#F4F6F8;
+      --white:#FFFFFF;
+      --line:#D8E0E7;
+      --text:#445264;
+      --max:1180px;
+      --shadow:0 18px 50px rgba(7,24,39,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.03em}
+    h1{font-size:clamp(3rem,6vw,5.35rem);line-height:1.02;margin-bottom:24px;font-weight:500}
+    h2{font-size:clamp(2rem,4vw,3.45rem);line-height:1.08;margin-bottom:18px;font-weight:500}
+    h3{font-size:1.18rem;line-height:1.3;margin-bottom:12px}
+    p{color:var(--text)}
+    a{color:inherit}
+    button,input{font:inherit}
+    .container{max-width:var(--max);margin:auto;padding:0 28px}
+    .skip{position:absolute;top:-100px;left:16px;background:white;padding:10px 12px;z-index:999;border-radius:8px}.skip:focus{top:16px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.22em;font-size:.77rem;font-weight:700;color:var(--gold);margin-bottom:20px}
+    .eyebrow:before{content:"";width:32px;height:1px;background:var(--gold);display:inline-block}
+    .top{position:sticky;top:0;z-index:60;background:rgba(7,24,39,.78);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{text-decoration:none;color:#fff;font-size:1.26rem;font-weight:700;letter-spacing:.12em}
+    .brand small{display:block;font-size:.58rem;letter-spacing:.35em;color:#c8b46e;margin-top:-2px}
+    .navlinks{display:flex;align-items:center;gap:26px}
+    .navlinks a{text-decoration:none;color:#dce7f1;font-size:.95rem}
+    .navlinks a:not(.button):hover{color:#fff}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:1px solid transparent;border-radius:999px;padding:16px 24px;font-weight:700;line-height:1.1;transition:transform .18s ease, background .18s ease, border-color .18s ease}
+    .button:hover{transform:translateY(-2px)}
+    .button.primary{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#182331;box-shadow:0 10px 28px rgba(210,181,81,.2)}
+    .button.primary:hover{background:linear-gradient(180deg,#ecd998,#d7b95a)}
+    .button.secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.24)}
+    .button.secondary:hover{background:rgba(255,255,255,.08)}
+    .hero{position:relative;overflow:hidden;background:
+      radial-gradient(circle at 18% 18%, rgba(210,181,81,.18) 0, transparent 26%),
+      radial-gradient(circle at 82% 20%, rgba(46,101,146,.26) 0, transparent 30%),
+      linear-gradient(135deg,#071827 0%, #0A2744 42%, #002F5C 100%);
+      color:#fff}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(7,24,39,.08), rgba(7,24,39,.42));pointer-events:none}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:44px;align-items:center;min-height:760px;padding:92px 0 86px}
+    .hero-copy p.lead{font-size:1.18rem;max-width:700px;color:#d7e4ef;margin-bottom:0}
+    .hero-copy .actions{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 22px}
+    .hero-copy .micro{font-size:.9rem;color:#bfd1df;max-width:620px}
+    .hero-copy h1 em{font-style:normal;color:var(--gold-soft)}
+    .hero-panel{background:linear-gradient(180deg, rgba(255,255,255,.1), rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.14);border-radius:28px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.2);backdrop-filter:blur(10px)}
+    .mini-label{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#d7bd6a;font-weight:700;margin-bottom:18px}
+    .scorecard{display:grid;gap:14px}
+    .score-row{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;padding:14px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.05)}
+    .score-ico{width:46px;height:46px;border-radius:14px;background:rgba(210,181,81,.16);display:flex;align-items:center;justify-content:center;color:var(--gold-soft);font-weight:700}
+    .score-row p{margin:0;color:#cfdeea;font-size:.96rem}
+    .score-row strong{display:block;margin-bottom:4px;color:#fff;font-size:1rem}
+    .metrics{margin-top:-34px;position:relative;z-index:5}
+    .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .metric{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
+    .metric strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.2rem;font-weight:500;color:var(--navy);margin-bottom:6px}
+    .metric span{display:block;font-size:.88rem;text-transform:uppercase;letter-spacing:.14em;color:#7a8796;margin-bottom:10px}
+    .metric p{margin:0;font-size:.95rem}
+    section{padding:96px 0}
+    .section-head{max-width:820px;margin-bottom:38px}
+    .section-head p{font-size:1.08rem}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+    .card.dark{background:linear-gradient(180deg,#0B2238,#081828);border-color:rgba(255,255,255,.06);color:#fff}
+    .card.dark p{color:#d3deea}
+    .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .value-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+    .value-card .num{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;background:#edf4fa;color:var(--navy);font-weight:800;margin-bottom:18px}
+    .value-card p{margin-bottom:0}
+    .process-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .process-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .process-card:after{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold), transparent)}
+    .process-tag{font-size:.77rem;text-transform:uppercase;letter-spacing:.18em;color:#8d7530;font-weight:700;margin-bottom:16px}
+    .method{background:linear-gradient(180deg,#091c2e,#102942);color:#fff}
+    .method .section-head p{color:#d5e0ea}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .step{padding:28px 22px;border:1px solid rgba(255,255,255,.1);border-radius:24px;background:rgba(255,255,255,.04)}
+    .step .n{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:rgba(210,181,81,.13);color:var(--gold-soft);font-weight:800;margin-bottom:16px}
+    .step p{color:#d3deea;margin-bottom:0}
+    .checker-wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:26px;align-items:start}
+    .checker{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:var(--shadow)}
+    .checker fieldset{margin:0;padding:0;border:0}
+    .checker legend{font-size:1.28rem;font-weight:700;color:var(--ink);margin-bottom:10px}
+    .checker-intro{font-size:.98rem;margin-bottom:18px}
+    .checkline{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line);cursor:pointer}
+    .checkline:last-of-type{border-bottom:0}
+    .checkline input{width:21px;height:21px;margin-top:3px;accent-color:var(--navy)}
+    .checkline span{color:var(--ink)}
+    .checker .button{width:100%;margin-top:24px}
+    .result{display:none;margin-top:22px;padding:20px 20px 18px;background:#f1f6fb;border:1px solid #d7e5f1;border-left:4px solid var(--gold);border-radius:16px}
+    .result.show{display:block}
+    .result p{margin-bottom:10px}
+    .result ul{margin:0;padding-left:20px}
+    .aside-block{display:grid;gap:18px}
+    .quote{background:linear-gradient(180deg,#fff,#fbfcfd);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+    .quote strong{display:block;color:var(--navy);margin-bottom:10px}
+    .quote p{margin:0}
+    .bullet-list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .bullet-list li{display:grid;grid-template-columns:18px 1fr;gap:12px;align-items:start}
+    .bullet-list li::before{content:"•";color:var(--gold);font-size:1.4rem;line-height:1}
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-bottom:14px;box-shadow:var(--shadow)}
+    .faq summary{cursor:pointer;font-weight:700;color:var(--ink)}
+    .faq details p{margin-top:14px;margin-bottom:0}
+    .cta{background:linear-gradient(135deg,#071827,#002F5C 72%, #0C3C65);color:#fff;text-align:center;position:relative;overflow:hidden}
+    .cta:before{content:"";position:absolute;inset:auto -120px -120px auto;width:300px;height:300px;border-radius:50%;background:rgba(210,181,81,.08)}
+    .cta p{color:#d7e4ef;max-width:780px;margin:0 auto 30px;font-size:1.08rem}
+    .footer{background:#071827;color:#c9d7e2;padding:34px 0;font-size:.92rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:18px;align-items:center}
+    .footer strong{color:#fff}.footer a{color:#e2cb7e;text-decoration:none}
+    @media (max-width:1020px){
+      .hero-grid,.split,.checker-wrap{grid-template-columns:1fr}
+      .hero-grid{min-height:auto;padding-top:84px}
+      .metrics-grid,.steps{grid-template-columns:repeat(2,1fr)}
+      .value-grid{grid-template-columns:1fr 1fr}
+      .process-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:760px){
+      .navlinks a:not(.button){display:none}
+      .metrics{margin-top:0}
+      .metrics-grid,.value-grid,.process-grid,.steps{grid-template-columns:1fr}
+      section{padding:74px 0}
+      .container{padding:0 20px}
+      .hero-grid{padding-bottom:70px}
+      .footer-inner{flex-direction:column;align-items:flex-start}
+      h1{font-size:clamp(2.5rem,11vw,4rem)}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="Liventis Corp, inicio">LIVENTIS<small>CORP</small></a>
+    <nav class="navlinks" aria-label="Navegación principal">
+      <a href="#valor">Propuesta de valor</a>
+      <a href="#procesos">Procesos</a>
+      <a href="#metodo">Método</a>
+      <a class="button primary" href="#evaluacion">Descubrir oportunidades</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">LIVENTIS AI &amp; AUTOMATION</div>
+        <h1>Optimiza procesos con <em>automatización e inteligencia artificial</em> sin complicar tu operativa.</h1>
+        <p class="lead">Ayudamos a empresas a identificar tareas repetitivas, simplificar flujos de trabajo y diseñar soluciones útiles para reducir carga operativa, mejorar la trazabilidad y ganar tiempo para lo verdaderamente estratégico.</p>
+        <div class="actions">
+          <a class="button primary" href="#evaluacion">Descubrir qué puedo automatizar</a>
+          <a class="button secondary" href="https://calendly.com/aranzazurodriguez/30min" target="_blank" rel="noopener noreferrer">Reservar una reunión</a>
+        </div>
+        <p class="micro">Diagnóstico, automatización a medida, asistentes IA y seguimiento. Enfocado a procesos reales, herramientas existentes y necesidades concretas de tu empresa.</p>
+      </div>
+      <aside class="hero-panel" aria-label="Resumen ejecutivo de la propuesta">
+        <div class="mini-label">Qué resolvemos</div>
+        <div class="scorecard">
+          <div class="score-row">
+            <div class="score-ico">01</div>
+            <div><strong>Menos trabajo manual</strong><p>Reducimos tareas repetitivas que consumen tiempo y dispersan al equipo.</p></div>
+          </div>
+          <div class="score-row">
+            <div class="score-ico">02</div>
+            <div><strong>Mejor coordinación</strong><p>Conectamos aplicaciones, datos y procesos para evitar duplicidades.</p></div>
+          </div>
+          <div class="score-row">
+            <div class="score-ico">03</div>
+            <div><strong>Más capacidad operativa</strong><p>Integramos automatización e IA donde aportan eficiencia y control.</p></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="metrics" aria-label="Indicadores de propuesta de valor">
+    <div class="container">
+      <div class="metrics-grid">
+        <article class="metric"><span>Enfoque</span><strong>Procesos</strong><p>Analizamos cómo trabaja tu empresa antes de proponer herramientas.</p></article>
+        <article class="metric"><span>Servicio</span><strong>A medida</strong><p>Diseñamos soluciones adaptadas a tu operativa y nivel de digitalización.</p></article>
+        <article class="metric"><span>Implementación</span><strong>Con criterio</strong><p>Priorizamos lo viable, útil y sostenible para tu equipo.</p></article>
+        <article class="metric"><span>Continuidad</span><strong>Seguimiento</strong><p>Acompañamos la puesta en marcha y los ajustes posteriores.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="valor">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Propuesta de valor</div>
+        <h2>No se trata de incorporar tecnología porque sí. Se trata de que tu negocio funcione mejor.</h2>
+        <p>Automatizamos con una mirada empresarial: qué tareas consumen tiempo, qué cuellos de botella se repiten, qué información se duplica y dónde la inteligencia artificial puede aportar apoyo real sin introducir más complejidad de la necesaria.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <div class="num">01</div>
+          <h3>Diagnóstico funcional</h3>
+          <p>Revisamos tareas, herramientas y puntos de fricción para detectar oportunidades de mejora con una visión práctica.</p>
+        </article>
+        <article class="value-card">
+          <div class="num">02</div>
+          <h3>Automatización a medida</h3>
+          <p>Diseñamos e implementamos flujos que reduzcan trabajo manual, errores y tiempos de gestión.</p>
+        </article>
+        <article class="value-card">
+          <div class="num">03</div>
+          <h3>Asistentes IA</h3>
+          <p>Configuramos asistentes orientados a tareas concretas: información, respuesta, soporte interno o documentación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="procesos">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Qué podemos analizar</div>
+        <h2>Procesos donde la automatización y la IA pueden aportar valor</h2>
+        <p>Estas son algunas de las áreas que solemos revisar en empresas que quieren ganar eficiencia sin replantear por completo su forma de trabajar.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="process-tag">Atención al cliente</div>
+          <h3>Respuestas a clientes y gestión de consultas</h3>
+          <p>Clasificación de solicitudes, respuestas frecuentes, derivación al equipo adecuado y soporte inicial en canales digitales.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-tag">Área comercial</div>
+          <h3>Contactos, presupuestos y seguimiento de ventas</h3>
+          <p>Registro de oportunidades, avisos, seguimiento de propuestas y organización de la información comercial.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-tag">Agenda y servicio</div>
+          <h3>Recordatorios, citas y seguimiento</h3>
+          <p>Confirmaciones de reuniones, avisos automáticos, tareas asociadas y seguimiento posterior al contacto.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-tag">Administración</div>
+          <h3>Documentación e informes</h3>
+          <p>Preparación de borradores, resúmenes, clasificación documental y apoyo en la generación de informes recurrentes.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-tag">Integración de sistemas</div>
+          <h3>Conexión de herramientas y aplicaciones</h3>
+          <p>Sincronización entre formularios, CRM, correo electrónico, hojas de cálculo, calendarios y otras plataformas de trabajo.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-tag">IA aplicada</div>
+          <h3>Asistentes IA configurados para tu negocio</h3>
+          <p>Soluciones basadas en inteligencia artificial para apoyar tareas concretas con instrucciones, límites y supervisión definidos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="method" id="metodo">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Cómo trabajamos</div>
+        <h2>Un método claro para automatizar con seguridad y sentido</h2>
+        <p>No proponemos automatizaciones aisladas ni herramientas desconectadas de la operativa. Trabajamos por fases para identificar, priorizar, implementar y ajustar.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><div class="n">01</div><h3>Diagnóstico</h3><p>Analizamos tus procesos, herramientas y tareas recurrentes para detectar oportunidades reales.</p></article>
+        <article class="step"><div class="n">02</div><h3>Priorización</h3><p>Valoramos impacto, complejidad, dependencia del equipo y viabilidad técnica.</p></article>
+        <article class="step"><div class="n">03</div><h3>Implementación</h3><p>Diseñamos la solución, conectamos los sistemas necesarios y validamos su funcionamiento.</p></article>
+        <article class="step"><div class="n">04</div><h3>Seguimiento</h3><p>Revisamos el rendimiento, ajustamos la lógica y acompañamos la evolución del proceso.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion">
+    <div class="container checker-wrap">
+      <div class="aside-block">
+        <div class="section-head" style="margin-bottom:0">
+          <div class="eyebrow">Primer paso</div>
+          <h2>Descubre qué áreas de tu negocio podrían automatizarse primero</h2>
+          <p>Haz una revisión rápida de tareas repetitivas. Es una orientación inicial para detectar posibles oportunidades antes de realizar un análisis más detallado.</p>
+        </div>
+        <div class="quote">
+          <strong>Servicio asociado</strong>
+          <ul class="bullet-list">
+            <li><span>Diagnóstico de procesos y puntos de mejora.</span></li>
+            <li><span>Automatización a medida según necesidades y herramientas.</span></li>
+            <li><span>Asistentes IA configurados para tareas concretas.</span></li>
+            <li><span>Seguimiento y optimización posterior.</span></li>
+          </ul>
+        </div>
+        <div class="card dark">
+          <h3 style="margin-bottom:10px">¿Prefieres comentarlo directamente?</h3>
+          <p>Reserva una reunión y revisamos juntos qué tareas tienen más sentido automatizar, con qué prioridad y con qué enfoque.</p>
+          <a class="button primary" href="https://calendly.com/aranzazurodriguez/30min" target="_blank" rel="noopener noreferrer">Hablar sobre mi negocio</a>
+        </div>
+      </div>
+      <div class="checker">
+        <form id="diagnostico" autocomplete="off">
+          <fieldset>
+            <legend>¿Qué tareas consumen tiempo en tu empresa?</legend>
+            <p class="checker-intro">Selecciona una o varias opciones y te mostraremos áreas de oportunidad iniciales.</p>
+            <label class="checkline"><input type="checkbox" name="areas" value="clientes"><span>Responder consultas similares de clientes.</span></label>
+            <label class="checkline"><input type="checkbox" name="areas" value="ventas"><span>Registrar contactos y hacer seguimiento de presupuestos o ventas.</span></label>
+            <label class="checkline"><input type="checkbox" name="areas" value="agenda"><span>Gestionar citas, recordatorios y seguimientos posteriores.</span></label>
+            <label class="checkline"><input type="checkbox" name="areas" value="informes"><span>Preparar documentos, informes o resúmenes de forma repetitiva.</span></label>
+            <label class="checkline"><input type="checkbox" name="areas" value="integraciones"><span>Pasar datos manualmente de una herramienta a otra.</span></label>
+            <button type="submit" class="button primary">Ver oportunidades iniciales</button>
+          </fieldset>
+        </form>
+        <div id="resultado" class="result" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container faq">
+      <div class="section-head">
+        <div class="eyebrow">Preguntas frecuentes</div>
+        <h2>Lo que las empresas suelen preguntar antes de automatizar</h2>
+      </div>
+      <details>
+        <summary>¿Tengo que cambiar las herramientas que ya utilizo?</summary>
+        <p>No necesariamente. En muchos casos podemos conectar o mejorar procesos utilizando la infraestructura digital actual, siempre que sea funcional para el objetivo planteado.</p>
+      </details>
+      <details>
+        <summary>¿La inteligencia artificial es imprescindible?</summary>
+        <p>No. Algunas mejoras se resuelven con automatización e integración convencional. Incorporamos IA solo cuando aporta utilidad real al proceso y puede utilizarse con criterio.</p>
+      </details>
+      <details>
+        <summary>¿Qué tipo de empresas pueden beneficiarse?</summary>
+        <p>PYMES, profesionales, negocios de servicios, comercios y organizaciones con tareas administrativas, comerciales o de atención al cliente que se repiten con frecuencia.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se define el presupuesto?</summary>
+        <p>Depende del alcance, del número de procesos implicados, de las herramientas que haya que conectar y del nivel de personalización requerido. Tras el análisis inicial, preparamos una propuesta ajustada.</p>
+      </details>
+      <details>
+        <summary>¿Ofrecéis seguimiento después de implementar?</summary>
+        <p>Sí. Podemos acompañar la puesta en marcha, realizar ajustes y revisar el rendimiento de la solución conforme evoluciona tu operativa.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="eyebrow">Liventis AI &amp; Automation</div>
+      <h2>Descubre qué puedes automatizar y por dónde tiene sentido empezar</h2>
+      <p>Si tu empresa dedica demasiadas horas a tareas repetitivas, podemos ayudarte a identificar oportunidades concretas y diseñar una solución alineada con tu forma de trabajar.</p>
+      <a class="button primary" href="https://calendly.com/aranzazurodriguez/30min" target="_blank" rel="noopener noreferrer">Descubrir qué puedo automatizar</a>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>LIVENTIS CORP</strong> · Estrategia, automatización e inteligencia artificial aplicada al negocio</div>
+    <div><a href="https://liventiscorp.com/">liventiscorp.com</a> · <a href="https://calendly.com/aranzazurodriguez/30min" target="_blank" rel="noopener noreferrer">Reservar reunión</a></div>
+  </div>
+</footer>
+<script>
+(function(){
+  const form=document.getElementById('diagnostico');
+  const result=document.getElementById('resultado');
+  const topics={
+    clientes:'Atención al cliente: respuestas frecuentes, clasificación de consultas y apoyo inicial en canales digitales.',
+    ventas:'Área comercial: seguimiento de contactos, presupuestos y avisos automáticos al equipo.',
+    agenda:'Agenda y seguimiento: confirmaciones, recordatorios y tareas asociadas a reuniones o citas.',
+    informes:'Administración: generación de borradores, organización documental y resúmenes recurrentes.',
+    integraciones:'Integraciones: sincronización de datos entre formularios, correo, CRM y otras herramientas.'
+  };
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const checked=[...form.querySelectorAll('input:checked')].map(i=>i.value);
+    result.classList.add('show');
+    result.innerHTML='';
+    const p=document.createElement('p');
+    const strong=document.createElement('strong');
+    strong.textContent=checked.length ? 'Estas son tus posibles áreas de oportunidad iniciales:' : 'Selecciona al menos una opción para ver oportunidades.';
+    p.appendChild(strong);
+    result.appendChild(p);
+    if(checked.length){
+      const ul=document.createElement('ul');
+      checked.forEach(k=>{const li=document.createElement('li'); li.textContent=topics[k]; ul.appendChild(li);});
+      result.appendChild(ul);
+      const p2=document.createElement('p');
+      p2.style.marginTop='12px';
+      p2.textContent='El siguiente paso es revisar la viabilidad, el impacto y la prioridad de cada proceso en tu caso concreto.';
+      result.appendChild(p2);
+    }
+    result.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+})();
+</script>
+</body>
+</html>
