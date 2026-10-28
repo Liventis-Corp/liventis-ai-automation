@@ -1,24 +1,1063 @@
+
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07182D"><meta name="description" content="Descubre qué procesos de tu empresa puedes automatizar. Diagnóstico orientativo de 5 preguntas con recomendaciones personalizadas de Liventis Corp."><title>Liventis AI & Automation | Diagnóstico de automatización</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"><style>
-:root{--navy:#07182D;--blue:#002F5C;--gold:#D2B551;--paper:#F5F6F8;--ink:#18283D;--muted:#516177;--line:#D8DFE7;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}button,input{font:inherit}button{cursor:pointer}a{color:inherit}h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;font-weight:500;margin:0 0 16px}h1{font-size:clamp(2.35rem,5.2vw,4.6rem)}h2{font-size:clamp(1.9rem,3.7vw,3.1rem)}h3{font-size:1.55rem}p{margin:0 0 18px}.wrap{max-width:1160px;margin:0 auto;padding:0 24px}.skip{position:absolute;left:12px;top:-90px;background:#fff;padding:8px}.skip:focus{top:12px}.top{background:var(--navy);border-bottom:1px solid #ffffff2b}.nav{height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px}.identity{display:flex;gap:14px;align-items:center;text-decoration:none;color:#fff}.identity img{width:65px;height:65px;object-fit:contain;border-radius:8px}.identity span{font-size:.78rem;letter-spacing:.16em;font-weight:700}.toplinks{display:flex;gap:24px;align-items:center;color:#f0f2f4;font-size:.86rem}.toplinks a{text-decoration:none}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:4px;padding:15px 23px;font-weight:700;text-decoration:none;border:1px solid transparent;transition:background .2s,transform .2s}.pill:hover{transform:translateY(-2px)}.gold{background:var(--gold);color:var(--navy)}.outline{border-color:#ffffff70;color:#fff;background:transparent}.outline:hover{background:#ffffff12}.hero{background:linear-gradient(115deg,#07182deF,#002f5cdb),radial-gradient(circle at 80% 36%,#2a5774,transparent 40%);color:white;padding:95px 0 92px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:center}.kicker{color:var(--gold);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:19px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:#dde7ef;font-size:1.04rem}.hero .btns{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0}.small{font-size:.8rem!important;opacity:.84}.hero-box{border:1px solid #ffffff40;border-radius:12px;background:#ffffff0c;padding:32px;box-shadow:0 18px 65px #0003}.hero-box strong{display:block;color:var(--gold);font-size:.8rem;letter-spacing:.1em;margin-bottom:23px}.hero-box div{padding:15px 0;border-top:1px solid #ffffff25;font-size:.93rem}.hero-box div:before{content:'✦';color:var(--gold);margin-right:11px}section.panel{padding:84px 0}.intro{max-width:740px;margin-bottom:36px}.intro p{color:var(--muted)}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.tile{background:white;border:1px solid var(--line);border-radius:10px;padding:29px;box-shadow:0 12px 32px #07182d0b}.tile b{color:#8c7739;font-size:.78rem;letter-spacing:.12em}.tile h3{font-size:1.32rem;margin-top:18px}.tile p{color:var(--muted);font-size:.91rem;margin:0}.section-dark{background:var(--navy);color:white}.section-dark p{color:#e1e8ef}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.steps article{border-top:2px solid var(--gold);padding-top:19px}.steps b{display:block;color:var(--gold);font-size:1.6rem;font-family:Georgia,serif;margin-bottom:8px}.steps h3{font-size:1.22rem}.steps p{font-size:.89rem}.funnel{padding:95px 0}.funnel-layout{display:grid;grid-template-columns:1fr 1.12fr;gap:56px;align-items:start}.stage{background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:0 14px 45px #07182d13}.stage-head{color:var(--blue);font-size:.76rem;letter-spacing:.15em;font-weight:700;margin-bottom:10px}.stage p{color:var(--muted);font-size:.92rem}.hidden{display:none!important}.form-status{margin:20px 0 0;font-size:.88rem;color:var(--muted)}.hs-form-frame{min-height:250px}#quiz fieldset{border:0;margin:0;padding:0}#quiz legend{font-family:'Playfair Display',serif;font-size:1.6rem;line-height:1.3;margin-bottom:21px;font-weight:500}#quiz .opt{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;cursor:pointer;background:white}.opt:has(input:checked){border-color:var(--blue);background:#edf3f8}.opt input{margin-top:5px;accent-color:var(--blue);flex-shrink:0}.quiz-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px}.progress{height:7px;background:#e7ecf1;border-radius:7px;overflow:hidden;margin-bottom:25px}.progress>div{height:100%;background:var(--gold);transition:width .2s}.quiz-error{color:#a52723;font-weight:600;font-size:.88rem;min-height:22px}.btn{border:none;background:var(--blue);color:white;border-radius:5px;padding:14px 21px;font-weight:700}.btn:disabled{opacity:.45;cursor:not-allowed}.btn.light{background:#e8edf2;color:var(--ink)}.metric{background:#eef3f7;padding:18px;border-left:3px solid var(--gold);margin:22px 0;border-radius:4px}#results h3{color:var(--blue)}.result-list{padding-left:22px}.result-list li{margin:9px 0}.result-block{border-top:1px solid var(--line);padding-top:20px;margin-top:22px}#results .muted{font-size:.85rem;color:var(--muted)}.result-cta{background:var(--navy);color:#fff;padding:24px;border-radius:10px;margin-top:26px}.result-cta p{color:#d8e4ee}.result-cta .pill{margin-top:8px}.result-cta h3{color:#fff}.footer{background:#07182D;color:#cbd6e0;padding:38px 0;font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:20px}.foot a{color:#e5cc7c}.tag{display:inline-block;background:#eaf0f5;color:var(--blue);padding:6px 11px;border-radius:4px;font-size:.8rem;font-weight:700}.ready{background:#eaf4ee;border-left:4px solid #217047;padding:12px;margin:18px 0}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);margin-top:12px}@media(max-width:900px){.hero-grid,.funnel-layout{grid-template-columns:1fr}.three{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero{padding:70px 0}.toplinks a:not(.pill){display:none}}@media(max-width:600px){.three,.steps{grid-template-columns:1fr}.nav{height:80px}.identity img{width:52px;height:52px}.identity span{font-size:.67rem}.toplinks .pill{padding:11px;font-size:.72rem}.hero-box{padding:24px}.stage{padding:22px}section.panel{padding:62px 0}.funnel{padding:64px 0}.foot{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head><body><a href="#main" class="skip">Saltar al contenido</a><header class="top"><div class="wrap nav"><a class="identity" href="#inicio"><img src="./logo-liventis.jpg" alt="Logotipo original de Liventis Corp"><span>LIVENTIS CORP<br><small>AI &amp; AUTOMATION</small></span></a><nav class="toplinks"><a href="#areas">Qué analizamos</a><a href="#metodo">Nuestro método</a><a href="#registro" class="pill gold">Iniciar diagnóstico</a></nav></div></header><main id="main"><section class="hero" id="inicio"><div class="wrap hero-grid"><div><div class="kicker">LIVENTIS AI &amp; AUTOMATION</div><h1>¿Cuántas horas pierde tu negocio haciendo tareas que <em>podrían automatizarse?</em></h1><p>Descubre qué procesos pueden simplificarse utilizando tecnología e inteligencia artificial, sin necesidad de cambiar toda tu forma de trabajar.</p><div class="btns"><a href="#registro" class="pill gold">Descubrir qué puedo automatizar</a><a href="#areas" class="pill outline">Qué analizaremos</a></div><p class="small">Diagnóstico inicial gratuito · 5 preguntas · Recomendaciones según tus respuestas</p></div><aside class="hero-box"><strong>OPORTUNIDADES QUE EXPLORAMOS</strong><div>Atención al cliente y consultas</div><div>Presupuestos y seguimiento comercial</div><div>Citas y recordatorios</div><div>Documentos e informes</div><div>Conexión de aplicaciones y asistentes IA</div></aside></div></section><section class="panel" id="areas"><div class="wrap"><div class="intro"><div class="kicker">Análisis orientado a negocio</div><h2>La automatización empieza entendiendo los procesos.</h2><p>Identificamos tareas repetitivas, su frecuencia, las herramientas existentes y dónde puede merecer la pena una evaluación más profunda.</p></div><div class="three"><article class="tile"><b>01 / CLIENTES</b><h3>Consultas y atención</h3><p>Recepción, clasificación, respuestas frecuentes y derivación al equipo.</p></article><article class="tile"><b>02 / VENTAS</b><h3>CRM y seguimiento</h3><p>Registro de solicitudes, presupuestos, oportunidades y recordatorios.</p></article><article class="tile"><b>03 / OPERACIONES</b><h3>Tareas internas</h3><p>Agendas, informes, documentación y transferencia de datos entre herramientas.</p></article></div></div></section><section class="panel section-dark" id="metodo"><div class="wrap"><div class="intro"><div class="kicker">Enfoque Liventis</div><h2>Soluciones adaptadas a cómo trabaja tu empresa.</h2><p>Una evaluación orientativa es solo el inicio. Antes de implementar, hay que comprobar la viabilidad y el retorno de cada oportunidad.</p></div><div class="steps"><article><b>01</b><h3>Identificar</h3><p>Localizamos procesos repetitivos y puntos de fricción.</p></article><article><b>02</b><h3>Priorizar</h3><p>Valoramos frecuencia, volumen, herramientas y complejidad.</p></article><article><b>03</b><h3>Diseñar</h3><p>Proponemos automatizaciones, integraciones o asistentes IA pertinentes.</p></article><article><b>04</b><h3>Supervisar</h3><p>Validamos los cambios y mantenemos controles humanos.</p></article></div></div></section><section class="funnel" id="registro"><div class="wrap funnel-layout"><div><div class="kicker">Diagnóstico gratuito</div><h2>Descubre oportunidades concretas en cinco preguntas.</h2><p>Primero registramos tu solicitud mediante HubSpot. Después accederás al cuestionario y recibirás una valoración inicial con propuestas relacionadas con tus respuestas.</p><p><strong>Qué recibirás:</strong> un nivel orientativo de oportunidad, las áreas prioritarias para revisar y posibles soluciones empresariales.</p><p class="small" style="color:#566779">Esta evaluación no accede a tus sistemas, no audita información interna y no garantiza ahorros económicos. La viabilidad real requiere análisis profesional.</p></div><div class="stage"><div id="formStage"><div class="stage-head">PASO 1 DE 2 · REGISTRO</div><h3>Accede a tu diagnóstico</h3><p>Completa el formulario de Liventis Corp. El consentimiento para recibir comunicaciones comerciales es opcional.</p><div class="hs-form-frame" data-region="eu1" data-form-id="b316210e-b4a0-4010-8b43-85a51797460b" data-portal-id="149636353"></div><p id="formStatus" class="form-status" role="status">El test aparecerá cuando HubSpot confirme el registro.</p></div><div id="quizStage" class="hidden"><div class="stage-head">PASO 2 DE 2 · EVALUACIÓN</div><div class="ready">Registro confirmado. Ya puedes realizar el diagnóstico.</div><div class="progress" aria-hidden="true"><div id="bar"></div></div><p id="counter" class="tag"></p><form id="quiz"><fieldset><legend id="question"></legend><div id="answers"></div></fieldset><div class="quiz-error" id="quizError" role="alert"></div><div class="quiz-nav"><button class="btn light" type="button" id="prev">Anterior</button><button class="btn" type="submit" id="next">Siguiente</button></div></form></div><div id="results" class="hidden" aria-live="polite"></div></div></div></section><section class="panel" style="background:#fff"><div class="wrap faq"><div class="intro"><div class="kicker">Preguntas frecuentes</div><h2>Automatizar con criterio.</h2></div><details><summary>¿Es necesario cambiar los programas que ya utilizo?</summary><p>No siempre. Primero se estudia si pueden integrarse y qué limitaciones presentan.</p></details><details><summary>¿Todo requiere inteligencia artificial?</summary><p>No. Muchas tareas se resuelven con reglas, formularios o integraciones sin IA.</p></details><details><summary>¿Qué sucede con mis datos?</summary><p>Los datos del formulario se gestionan mediante HubSpot. Las respuestas de este test se procesan en tu navegador y todavía no se transmiten automáticamente al CRM. Consulta la política de privacidad de Liventis Corp.</p></details></div></section></main><footer class="footer"><div class="wrap foot"><div>© Liventis Corp SL · Estrategia, tecnología y eficiencia empresarial</div><div><a href="https://liventiscorp.com" target="_blank" rel="noopener noreferrer">Web corporativa</a> · <a href="https://calendly.com/aranzazurodriguez" target="_blank" rel="noopener noreferrer">Reservar reunión</a></div></div></footer>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07182D">
+<meta name="description" content="Descubre qué procesos de tu empresa puedes automatizar. Diagnóstico orientativo de 5 preguntas con recomendaciones personalizadas de Liventis Corp.">
+<title>Liventis AI & Automation | Diagnóstico de automatización</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #07182D;
+  --blue: #002F5C;
+  --gold: #D2B551;
+  --paper: #F5F6F8;
+  --ink: #18283D;
+  --muted: #516177;
+  --line: #D8DFE7;
+  --white: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.65;
+}
+
+button, input { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+h1 { font-size: clamp(2.35rem, 5.2vw, 4.6rem); }
+h2 { font-size: clamp(1.9rem, 3.7vw, 3.1rem); }
+h3 { font-size: 1.55rem; }
+p { margin: 0 0 18px; }
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -90px;
+  background: #fff;
+  padding: 8px;
+}
+.skip:focus { top: 12px; }
+
+/* CABECERA */
+.top {
+  background: var(--navy);
+  border-bottom: 1px solid #ffffff2b;
+}
+
+.nav {
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.identity {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.identity img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.identity span {
+  font-size: .78rem;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+
+.toplinks {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: #f0f2f4;
+  font-size: .86rem;
+}
+
+.toplinks a { text-decoration: none; }
+
+/* BOTONES */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 15px 23px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background .2s, transform .2s;
+}
+
+.pill:hover { transform: translateY(-2px); }
+.gold { background: var(--gold); color: var(--navy); }
+
+.outline {
+  border-color: #ffffff70;
+  color: #fff;
+  background: transparent;
+}
+
+.outline:hover { background: #ffffff12; }
+
+/* PORTADA */
+.hero {
+  background:
+    linear-gradient(115deg, #07182def, #002f5cdb),
+    radial-gradient(circle at 80% 36%, #2a5774, transparent 40%);
+  color: white;
+  padding: 95px 0 92px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.kicker {
+  color: var(--gold);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.hero p { color: #dde7ef; font-size: 1.04rem; }
+
+.hero .btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.small { font-size: .8rem !important; opacity: .84; }
+
+.hero-box {
+  border: 1px solid #ffffff40;
+  border-radius: 12px;
+  background: #ffffff0c;
+  padding: 32px;
+  box-shadow: 0 18px 65px #0003;
+}
+
+.hero-box strong {
+  display: block;
+  color: var(--gold);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  margin-bottom: 23px;
+}
+
+.hero-box div {
+  padding: 15px 0;
+  border-top: 1px solid #ffffff25;
+  font-size: .93rem;
+}
+
+.hero-box div::before {
+  content: '✦';
+  color: var(--gold);
+  margin-right: 11px;
+}
+
+/* SECCIONES */
+section.panel { padding: 84px 0; }
+.intro { max-width: 740px; margin-bottom: 36px; }
+.intro p { color: var(--muted); }
+
+.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+}
+
+.tile {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 29px;
+  box-shadow: 0 12px 32px #07182d0b;
+}
+
+.tile b {
+  color: #8c7739;
+  font-size: .78rem;
+  letter-spacing: .12em;
+}
+
+.tile h3 { font-size: 1.32rem; margin-top: 18px; }
+.tile p { color: var(--muted); font-size: .91rem; margin: 0; }
+
+.section-dark { background: var(--navy); color: white; }
+.section-dark p { color: #e1e8ef; }
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.steps article {
+  border-top: 2px solid var(--gold);
+  padding-top: 19px;
+}
+
+.steps b {
+  display: block;
+  color: var(--gold);
+  font-size: 1.6rem;
+  font-family: Georgia, serif;
+  margin-bottom: 8px;
+}
+
+.steps h3 { font-size: 1.22rem; }
+.steps p { font-size: .89rem; }
+
+/* REGISTRO Y TEST */
+.funnel { padding: 95px 0; }
+
+.funnel-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.12fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.stage {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 34px;
+  box-shadow: 0 14px 45px #07182d13;
+}
+
+.stage-head {
+  color: var(--blue);
+  font-size: .76rem;
+  letter-spacing: .15em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stage p { color: var(--muted); font-size: .92rem; }
+.hidden { display: none !important; }
+
+.form-status {
+  margin: 20px 0 0;
+  font-size: .88rem;
+  color: var(--muted);
+}
+
+.hs-form-frame { min-height: 250px; }
+
+#quiz fieldset { border: 0; margin: 0; padding: 0; }
+
+#quiz legend {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 21px;
+  font-weight: 500;
+}
+
+#quiz .opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 14px 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  background: white;
+}
+
+.opt:has(input:checked) {
+  border-color: var(--blue);
+  background: #edf3f8;
+}
+
+.opt input {
+  margin-top: 5px;
+  accent-color: var(--blue);
+  flex-shrink: 0;
+}
+
+.quiz-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.progress {
+  height: 7px;
+  background: #e7ecf1;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress > div {
+  height: 100%;
+  background: var(--gold);
+  transition: width .2s;
+}
+
+.quiz-error {
+  color: #a52723;
+  font-weight: 600;
+  font-size: .88rem;
+  min-height: 22px;
+}
+
+.btn {
+  border: none;
+  background: var(--blue);
+  color: white;
+  border-radius: 5px;
+  padding: 14px 21px;
+  font-weight: 700;
+}
+
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.light { background: #e8edf2; color: var(--ink); }
+
+/* RESULTADOS */
+.metric {
+  background: #eef3f7;
+  padding: 18px;
+  border-left: 3px solid var(--gold);
+  margin: 22px 0;
+  border-radius: 4px;
+}
+
+#results h3 { color: var(--blue); }
+
+.result-list { padding-left: 22px; }
+.result-list li { margin: 9px 0; }
+
+.result-block {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 22px;
+}
+
+#results .muted {
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+/* TARJETA FINAL: CORRECCIÓN DEFINITIVA */
+.result-cta {
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 26px;
+}
+
+#results .result-cta h3 {
+  color: #FFFFFF !important;
+}
+
+#results .result-cta p {
+  color: #FFFFFF !important;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.result-cta .pill { margin-top: 8px; }
+
+/* ELEMENTOS ADICIONALES */
+.footer {
+  background: #07182D;
+  color: #cbd6e0;
+  padding: 38px 0;
+  font-size: .82rem;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.foot a { color: #e5cc7c; }
+
+.tag {
+  display: inline-block;
+  background: #eaf0f5;
+  color: var(--blue);
+  padding: 6px 11px;
+  border-radius: 4px;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.ready {
+  background: #eaf4ee;
+  border-left: 4px solid #217047;
+  padding: 12px;
+  margin: 18px 0;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.faq summary { cursor: pointer; font-weight: 700; }
+.faq p { color: var(--muted); margin-top: 12px; }
+
+@media(max-width:900px) {
+  .hero-grid, .funnel-layout { grid-template-columns: 1fr; }
+  .three { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .hero { padding: 70px 0; }
+  .toplinks a:not(.pill) { display: none; }
+}
+
+@media(max-width:600px) {
+  .three, .steps { grid-template-columns: 1fr; }
+  .nav { height: 80px; }
+  .identity img { width: 52px; height: 52px; }
+  .identity span { font-size: .67rem; }
+  .toplinks .pill { padding: 11px; font-size: .72rem; }
+  .hero-box { padding: 24px; }
+  .stage { padding: 22px; }
+  section.panel { padding: 62px 0; }
+  .funnel { padding: 64px 0; }
+  .foot { flex-direction: column; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+
+<body>
+<a href="#main" class="skip">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="identity" href="#inicio">
+      <img src="./logo-liventis.jpg" alt="Logotipo original de Liventis Corp">
+      <span>LIVENTIS CORP<br><small>AI &amp; AUTOMATION</small></span>
+    </a>
+    <nav class="toplinks">
+      <a href="#areas">Qué analizamos</a>
+      <a href="#metodo">Nuestro método</a>
+      <a href="#registro" class="pill gold">Iniciar diagnóstico</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">LIVENTIS AI &amp; AUTOMATION</div>
+
+      <h1>
+        ¿Cuántas horas pierde tu negocio haciendo tareas que
+        <em>podrían automatizarse?</em>
+      </h1>
+
+      <p>
+        Descubre qué procesos pueden simplificarse utilizando tecnología
+        e inteligencia artificial, sin necesidad de cambiar toda tu
+        forma de trabajar.
+      </p>
+
+      <div class="btns">
+        <a href="#registro" class="pill gold">
+          Descubrir qué puedo automatizar
+        </a>
+        <a href="#areas" class="pill outline">
+          Qué analizaremos
+        </a>
+      </div>
+
+      <p class="small">
+        Diagnóstico inicial gratuito · 5 preguntas ·
+        Recomendaciones según tus respuestas
+      </p>
+    </div>
+
+    <aside class="hero-box">
+      <strong>OPORTUNIDADES QUE EXPLORAMOS</strong>
+      <div>Atención al cliente y consultas</div>
+      <div>Presupuestos y seguimiento comercial</div>
+      <div>Citas y recordatorios</div>
+      <div>Documentos e informes</div>
+      <div>Conexión de aplicaciones y asistentes IA</div>
+    </aside>
+  </div>
+</section>
+
+<section class="panel" id="areas">
+  <div class="wrap">
+    <div class="intro">
+      <div class="kicker">Análisis orientado a negocio</div>
+      <h2>La automatización empieza entendiendo los procesos.</h2>
+      <p>
+        Identificamos tareas repetitivas, su frecuencia, las herramientas
+        existentes y dónde puede merecer la pena una evaluación más profunda.
+      </p>
+    </div>
+
+    <div class="three">
+      <article class="tile">
+        <b>01 / CLIENTES</b>
+        <h3>Consultas y atención</h3>
+        <p>
+          Recepción, clasificación, respuestas frecuentes y
+          derivación al equipo.
+        </p>
+      </article>
+
+      <article class="tile">
+        <b>02 / VENTAS</b>
+        <h3>CRM y seguimiento</h3>
+        <p>
+          Registro de solicitudes, presupuestos, oportunidades
+          y recordatorios.
+        </p>
+      </article>
+
+      <article class="tile">
+        <b>03 / OPERACIONES</b>
+        <h3>Tareas internas</h3>
+        <p>
+          Agendas, informes, documentación y transferencia de datos
+          entre herramientas.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="panel section-dark" id="metodo">
+  <div class="wrap">
+    <div class="intro">
+      <div class="kicker">Enfoque Liventis</div>
+      <h2>Soluciones adaptadas a cómo trabaja tu empresa.</h2>
+      <p>
+        Una evaluación orientativa es solo el inicio.
+        Antes de implementar, hay que comprobar la viabilidad
+        y el retorno de cada oportunidad.
+      </p>
+    </div>
+
+    <div class="steps">
+      <article>
+        <b>01</b>
+        <h3>Identificar</h3>
+        <p>Localizamos procesos repetitivos y puntos de fricción.</p>
+      </article>
+      <article>
+        <b>02</b>
+        <h3>Priorizar</h3>
+        <p>Valoramos frecuencia, volumen, herramientas y complejidad.</p>
+      </article>
+      <article>
+        <b>03</b>
+        <h3>Diseñar</h3>
+        <p>Proponemos automatizaciones, integraciones o asistentes IA pertinentes.</p>
+      </article>
+      <article>
+        <b>04</b>
+        <h3>Supervisar</h3>
+        <p>Validamos los cambios y mantenemos controles humanos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="funnel" id="registro">
+  <div class="wrap funnel-layout">
+
+    <div>
+      <div class="kicker">Diagnóstico gratuito</div>
+      <h2>Descubre oportunidades concretas en cinco preguntas.</h2>
+      <p>
+        Primero registramos tu solicitud mediante HubSpot.
+        Después accederás al cuestionario y recibirás una
+        valoración inicial con propuestas relacionadas con tus respuestas.
+      </p>
+      <p>
+        <strong>Qué recibirás:</strong> un nivel orientativo de oportunidad,
+        las áreas prioritarias para revisar y posibles soluciones empresariales.
+      </p>
+      <p class="small" style="color:#566779">
+        Esta evaluación no accede a tus sistemas, no audita información
+        interna y no garantiza ahorros económicos.
+        La viabilidad real requiere análisis profesional.
+      </p>
+    </div>
+
+    <div class="stage">
+
+      <div id="formStage">
+        <div class="stage-head">PASO 1 DE 2 · REGISTRO</div>
+        <h3>Accede a tu diagnóstico</h3>
+        <p>
+          Completa el formulario de Liventis Corp.
+          El consentimiento para recibir comunicaciones comerciales
+          es opcional.
+        </p>
+
+        <div class="hs-form-frame"
+             data-region="eu1"
+             data-form-id="b316210e-b4a0-4010-8b43-85a51797460b"
+             data-portal-id="149636353">
+        </div>
+
+        <p id="formStatus" class="form-status" role="status">
+          El test aparecerá cuando HubSpot confirme el registro.
+        </p>
+      </div>
+
+      <div id="quizStage" class="hidden">
+        <div class="stage-head">PASO 2 DE 2 · EVALUACIÓN</div>
+        <div class="ready">
+          Registro confirmado. Ya puedes realizar el diagnóstico.
+        </div>
+        <div class="progress" aria-hidden="true">
+          <div id="bar"></div>
+        </div>
+        <p id="counter" class="tag"></p>
+
+        <form id="quiz">
+          <fieldset>
+            <legend id="question"></legend>
+            <div id="answers"></div>
+          </fieldset>
+
+          <div class="quiz-error" id="quizError" role="alert"></div>
+
+          <div class="quiz-nav">
+            <button class="btn light" type="button" id="prev">Anterior</button>
+            <button class="btn" type="submit" id="next">Siguiente</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="results" class="hidden" aria-live="polite"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="panel" style="background:#fff">
+  <div class="wrap faq">
+    <div class="intro">
+      <div class="kicker">Preguntas frecuentes</div>
+      <h2>Automatizar con criterio.</h2>
+    </div>
+
+    <details>
+      <summary>¿Es necesario cambiar los programas que ya utilizo?</summary>
+      <p>
+        No siempre. Primero se estudia si pueden integrarse
+        y qué limitaciones presentan.
+      </p>
+    </details>
+
+    <details>
+      <summary>¿Todo requiere inteligencia artificial?</summary>
+      <p>
+        No. Muchas tareas se resuelven con reglas, formularios
+        o integraciones sin IA.
+      </p>
+    </details>
+
+    <details>
+      <summary>¿Qué sucede con mis datos?</summary>
+      <p>
+        Los datos del formulario se gestionan mediante HubSpot.
+        Las respuestas de este test se procesan en tu navegador y
+        todavía no se transmiten automáticamente al CRM.
+        Consulta la política de privacidad de Liventis Corp.
+      </p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div>
+      © Liventis Corp SL · Estrategia, tecnología y eficiencia empresarial
+    </div>
+    <div>
+      <a href="https://liventiscorp.com" target="_blank" rel="noopener noreferrer">
+        Web corporativa
+      </a>
+      ·
+      <a href="https://calendly.com/aranzazurodriguez" target="_blank" rel="noopener noreferrer">
+        Reservar reunión
+      </a>
+    </div>
+  </div>
+</footer>
+
 <script>
-(function(){
-const FORM_ID='b316210e-b4a0-4010-8b43-85a51797460b';
-const questions=[
-{question:'¿Qué área concentra más trabajo repetitivo en tu empresa?',options:[{label:'Atención a clientes y respuestas a consultas',score:2,area:'clientes'},{label:'Seguimiento de contactos, presupuestos o ventas',score:2,area:'ventas'},{label:'Citas, documentos y tareas administrativas',score:2,area:'operaciones'},{label:'No hemos identificado un área concreta',score:0,area:'analisis'}]},
-{question:'¿Con qué frecuencia se repiten esas tareas?',options:[{label:'Varias veces al día',score:3,area:'frecuencia'},{label:'Una vez al día o varios días por semana',score:2,area:'frecuencia'},{label:'De forma ocasional',score:1,area:'frecuencia'},{label:'No lo sé o no lo hemos medido',score:0,area:'medicion'}]},
-{question:'¿Cómo gestionáis actualmente los contactos, solicitudes y su seguimiento?',options:[{label:'De forma manual, mediante correo, mensajes o notas',score:3,area:'crm'},{label:'Con hojas de cálculo y recordatorios manuales',score:2,area:'crm'},{label:'Con un CRM, pero con tareas sin conectar',score:2,area:'integracion'},{label:'Con un CRM y procesos ya conectados',score:0,area:'optimizar'}]},
-{question:'¿Cómo se comparte la información entre las herramientas del negocio?',options:[{label:'Copiamos y pegamos datos con frecuencia',score:3,area:'integracion'},{label:'Utilizamos algunas conexiones, pero quedan pasos manuales',score:2,area:'integracion'},{label:'Las herramientas principales ya están integradas',score:0,area:'optimizar'},{label:'No sabemos si nuestras aplicaciones se pueden conectar',score:1,area:'analisis'}]},
-{question:'¿Qué situación describe mejor vuestro uso de IA y automatizaciones?',options:[{label:'Todavía no utilizamos ninguna',score:2,area:'ia'},{label:'Utilizamos ChatGPT u otras herramientas sin procesos definidos',score:2,area:'ia'},{label:'Tenemos algunas automatizaciones o asistentes aislados',score:1,area:'optimizar'},{label:'Tenemos procesos conectados, medidos y revisados',score:0,area:'optimizar'}]}
-];
-let current=0;const picks=Array(questions.length).fill(null);const formStage=document.getElementById('formStage'),quizStage=document.getElementById('quizStage'),results=document.getElementById('results');
-window.addEventListener('hs-form-event:on-submission:success',function(event){if(String(event.detail&&event.detail.formId||'').toLowerCase()!==FORM_ID)return;formStage.classList.add('hidden');quizStage.classList.remove('hidden');render();document.getElementById('registro').scrollIntoView({behavior:'smooth',block:'start'});});
-window.addEventListener('hs-form-event:on-submission:failed',function(event){if(String(event.detail&&event.detail.formId||'').toLowerCase()===FORM_ID){document.getElementById('formStatus').textContent='HubSpot no ha confirmado el envío. Revisa los campos e inténtalo de nuevo.';}});
-const quiz=document.getElementById('quiz');const answerBox=document.getElementById('answers');
-function render(){const q=questions[current];document.getElementById('counter').textContent='Pregunta '+(current+1)+' de '+questions.length;document.getElementById('question').textContent=q.question;document.getElementById('bar').style.width=((current+1)/questions.length*100)+'%';answerBox.replaceChildren();q.options.forEach((o,i)=>{const label=document.createElement('label');label.className='opt';const input=document.createElement('input');input.type='radio';input.name='respuesta';input.value=String(i);input.checked=picks[current]===i;input.addEventListener('change',()=>{picks[current]=i;document.getElementById('quizError').textContent='';});const span=document.createElement('span');span.textContent=o.label;label.append(input,span);answerBox.appendChild(label)});document.getElementById('prev').disabled=current===0;document.getElementById('next').textContent=current===questions.length-1?'Ver mi resultado':'Siguiente';}
-document.getElementById('prev').addEventListener('click',()=>{if(current>0){current--;render()}});
-quiz.addEventListener('submit',e=>{e.preventDefault();const selected=answerBox.querySelector('input:checked');if(!selected){document.getElementById('quizError').textContent='Selecciona una respuesta para continuar.';return;}picks[current]=Number(selected.value);if(current<questions.length-1){current++;render()}else showResults();});
-function showResults(){const chosen=picks.map((n,i)=>questions[i].options[n]);const total=chosen.reduce((sum,o)=>sum+o.score,0);const band=total>=10?'Potencial alto de revisión':total>=6?'Potencial moderado de mejora':'Oportunidades focalizadas o por validar';const area=chosen[0].area;const specific={clientes:{name:'Atención al cliente',action:'Mapear los tipos de consulta y la derivación al equipo; evaluar respuestas asistidas y un asistente IA supervisado.'},ventas:{name:'Ventas y presupuestos',action:'Organizar la entrada de solicitudes y la trazabilidad de cada oportunidad; estudiar recordatorios y automatizaciones del CRM.'},operaciones:{name:'Administración y agenda',action:'Inventariar citas, documentos y avisos recurrentes; priorizar flujos basados en reglas y aprobaciones.'},analisis:{name:'Mapeo de procesos',action:'Registrar durante una semana las tareas repetidas, su frecuencia, responsables y herramientas antes de invertir en automatización.'}};const primary=specific[area];let secondary='Definir un proceso piloto sencillo, asignar un responsable y medir su utilidad antes de ampliar la solución.';if(chosen[3].area==='integracion')secondary='Revisar las conexiones entre las herramientas actuales (API, integraciones nativas o n8n/Make), evitando duplicar datos.';else if(chosen[2].area==='crm')secondary='Estructurar un CRM y reglas claras de seguimiento para evitar consultas y presupuestos sin respuesta.';else if(chosen[4].area==='ia')secondary='Evaluar un caso acotado para un asistente IA, con revisión humana y límites sobre los datos que puede manejar.';const third=chosen[1].area==='medicion'?'Medir primero frecuencia y tiempo dedicado a tareas repetitivas para priorizar con evidencia.':'Medir tiempo de ejecución, incidencias y calidad del proceso antes y después de implementar cambios.';quizStage.classList.add('hidden');results.classList.remove('hidden');results.replaceChildren();const head=document.createElement('div');head.className='stage-head';head.textContent='TU RESULTADO · DIAGNÓSTICO INICIAL';results.appendChild(head);const title=document.createElement('h3');title.textContent=band;results.appendChild(title);const desc=document.createElement('p');desc.textContent='Puntuación orientativa: '+total+' de 13 puntos. Una puntuación más alta indica más señales de trabajo manual y posibles procesos para revisar; no mide por sí sola el ahorro posible.';results.appendChild(desc);const metric=document.createElement('div');metric.className='metric';metric.textContent='Área que has señalado: '+primary.name+'. Este resultado se basa exclusivamente en las cinco respuestas aportadas.';results.appendChild(metric);const blocks=[['Primera propuesta',primary.action],['Segunda propuesta',secondary],['Cómo comprobar el impacto',third]];blocks.forEach(([name,copy])=>{const div=document.createElement('div');div.className='result-block';const h=document.createElement('h3');h.textContent=name;const p=document.createElement('p');p.textContent=copy;div.append(h,p);results.appendChild(div)});const services=document.createElement('div');services.className='result-block';const sh=document.createElement('h3');sh.textContent='Servicios de Liventis que pueden encajar';const sp=document.createElement('p');sp.textContent=area==='clientes'?'Asistentes inteligentes, automatización de consultas, recepcionistas IA y análisis de procesos.':area==='ventas'?'Automatización comercial, integración CRM, seguimiento de presupuestos y análisis de procesos.':area==='operaciones'?'Automatización documental, integraciones, agendas y consultoría de productividad.':'Auditoría de automatización, identificación de casos de uso y evaluación de IA aplicada.';services.append(sh,sp);results.appendChild(services);const note=document.createElement('p');note.className='muted';note.textContent='Evaluación orientativa. No implica auditoría técnica ni estimación económica verificada. Las respuestas no se guardan automáticamente en HubSpot en esta versión.';results.appendChild(note);const cta=document.createElement('div');cta.className='result-cta';const ctitle=document.createElement('h3');ctitle.textContent='Transforma la oportunidad en un plan viable';const cp=document.createElement('p');cp.textContent='Podemos revisar tus procesos, validar las propuestas y definir las prioridades de implementación.';const a=document.createElement('a');a.className='pill gold';a.href='https://calendly.com/aranzazurodriguez';a.target='_blank';a.rel='noopener noreferrer';a.textContent='Reservar reunión estratégica';cta.append(ctitle,cp,a);results.appendChild(cta);results.scrollIntoView({behavior:'smooth',block:'start'});}
+(function() {
+  const FORM_ID = 'b316210e-b4a0-4010-8b43-85a51797460b';
+
+  const questions = [
+    {
+      question: '¿Qué área concentra más trabajo repetitivo en tu empresa?',
+      options: [
+        { label: 'Atención a clientes y respuestas a consultas', score: 2, area: 'clientes' },
+        { label: 'Seguimiento de contactos, presupuestos o ventas', score: 2, area: 'ventas' },
+        { label: 'Citas, documentos y tareas administrativas', score: 2, area: 'operaciones' },
+        { label: 'No hemos identificado un área concreta', score: 0, area: 'analisis' }
+      ]
+    },
+    {
+      question: '¿Con qué frecuencia se repiten esas tareas?',
+      options: [
+        { label: 'Varias veces al día', score: 3, area: 'frecuencia' },
+        { label: 'Una vez al día o varios días por semana', score: 2, area: 'frecuencia' },
+        { label: 'De forma ocasional', score: 1, area: 'frecuencia' },
+        { label: 'No lo sé o no lo hemos medido', score: 0, area: 'medicion' }
+      ]
+    },
+    {
+      question: '¿Cómo gestionáis actualmente los contactos, solicitudes y su seguimiento?',
+      options: [
+        { label: 'De forma manual, mediante correo, mensajes o notas', score: 3, area: 'crm' },
+        { label: 'Con hojas de cálculo y recordatorios manuales', score: 2, area: 'crm' },
+        { label: 'Con un CRM, pero con tareas sin conectar', score: 2, area: 'integracion' },
+        { label: 'Con un CRM y procesos ya conectados', score: 0, area: 'optimizar' }
+      ]
+    },
+    {
+      question: '¿Cómo se comparte la información entre las herramientas del negocio?',
+      options: [
+        { label: 'Copiamos y pegamos datos con frecuencia', score: 3, area: 'integracion' },
+        { label: 'Utilizamos algunas conexiones, pero quedan pasos manuales', score: 2, area: 'integracion' },
+        { label: 'Las herramientas principales ya están integradas', score: 0, area: 'optimizar' },
+        { label: 'No sabemos si nuestras aplicaciones se pueden conectar', score: 1, area: 'analisis' }
+      ]
+    },
+    {
+      question: '¿Qué situación describe mejor vuestro uso de IA y automatizaciones?',
+      options: [
+        { label: 'Todavía no utilizamos ninguna', score: 2, area: 'ia' },
+        { label: 'Utilizamos ChatGPT u otras herramientas sin procesos definidos', score: 2, area: 'ia' },
+        { label: 'Tenemos algunas automatizaciones o asistentes aislados', score: 1, area: 'optimizar' },
+        { label: 'Tenemos procesos conectados, medidos y revisados', score: 0, area: 'optimizar' }
+      ]
+    }
+  ];
+
+  let current = 0;
+  const picks = Array(questions.length).fill(null);
+
+  const formStage = document.getElementById('formStage');
+  const quizStage = document.getElementById('quizStage');
+  const results = document.getElementById('results');
+
+  window.addEventListener('hs-form-event:on-submission:success', function(event) {
+    if (String(event.detail && event.detail.formId || '').toLowerCase() !== FORM_ID) return;
+
+    formStage.classList.add('hidden');
+    quizStage.classList.remove('hidden');
+
+    render();
+
+    document.getElementById('registro').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+
+  window.addEventListener('hs-form-event:on-submission:failed', function(event) {
+    if (String(event.detail && event.detail.formId || '').toLowerCase() === FORM_ID) {
+      document.getElementById('formStatus').textContent =
+        'HubSpot no ha confirmado el envío. Revisa los campos e inténtalo de nuevo.';
+    }
+  });
+
+  const quiz = document.getElementById('quiz');
+  const answerBox = document.getElementById('answers');
+
+  function render() {
+    const q = questions[current];
+
+    document.getElementById('counter').textContent =
+      'Pregunta ' + (current + 1) + ' de ' + questions.length;
+
+    document.getElementById('question').textContent = q.question;
+
+    document.getElementById('bar').style.width =
+      ((current + 1) / questions.length * 100) + '%';
+
+    answerBox.replaceChildren();
+
+    q.options.forEach((o, i) => {
+      const label = document.createElement('label');
+      label.className = 'opt';
+
+      const input = document.createElement('input');
+      input.type = 'radio';
+      input.name = 'respuesta';
+      input.value = String(i);
+      input.checked = picks[current] === i;
+
+      input.addEventListener('change', () => {
+        picks[current] = i;
+        document.getElementById('quizError').textContent = '';
+      });
+
+      const span = document.createElement('span');
+      span.textContent = o.label;
+
+      label.append(input, span);
+      answerBox.appendChild(label);
+    });
+
+    document.getElementById('prev').disabled = current === 0;
+
+    document.getElementById('next').textContent =
+      current === questions.length - 1
+        ? 'Ver mi resultado'
+        : 'Siguiente';
+  }
+
+  document.getElementById('prev').addEventListener('click', () => {
+    if (current > 0) {
+      current--;
+      render();
+    }
+  });
+
+  quiz.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const selected = answerBox.querySelector('input:checked');
+
+    if (!selected) {
+      document.getElementById('quizError').textContent =
+        'Selecciona una respuesta para continuar.';
+      return;
+    }
+
+    picks[current] = Number(selected.value);
+
+    if (current < questions.length - 1) {
+      current++;
+      render();
+    } else {
+      showResults();
+    }
+  });
+
+  function showResults() {
+    const chosen = picks.map((n, i) => questions[i].options[n]);
+
+    const total = chosen.reduce((sum, o) => sum + o.score, 0);
+
+    const band = total >= 10
+      ? 'Potencial alto de revisión'
+      : total >= 6
+        ? 'Potencial moderado de mejora'
+        : 'Oportunidades focalizadas o por validar';
+
+    const area = chosen[0].area;
+
+    const specific = {
+      clientes: {
+        name: 'Atención al cliente',
+        action: 'Mapear los tipos de consulta y la derivación al equipo; evaluar respuestas asistidas y un asistente IA supervisado.'
+      },
+      ventas: {
+        name: 'Ventas y presupuestos',
+        action: 'Organizar la entrada de solicitudes y la trazabilidad de cada oportunidad; estudiar recordatorios y automatizaciones del CRM.'
+      },
+      operaciones: {
+        name: 'Administración y agenda',
+        action: 'Inventariar citas, documentos y avisos recurrentes; priorizar flujos basados en reglas y aprobaciones.'
+      },
+      analisis: {
+        name: 'Mapeo de procesos',
+        action: 'Registrar durante una semana las tareas repetidas, su frecuencia, responsables y herramientas antes de invertir en automatización.'
+      }
+    };
+
+    const primary = specific[area];
+
+    let secondary =
+      'Definir un proceso piloto sencillo, asignar un responsable y medir su utilidad antes de ampliar la solución.';
+
+    if (chosen[3].area === 'integracion') {
+      secondary =
+        'Revisar las conexiones entre las herramientas actuales (API, integraciones nativas o n8n/Make), evitando duplicar datos.';
+    } else if (chosen[2].area === 'crm') {
+      secondary =
+        'Estructurar un CRM y reglas claras de seguimiento para evitar consultas y presupuestos sin respuesta.';
+    } else if (chosen[4].area === 'ia') {
+      secondary =
+        'Evaluar un caso acotado para un asistente IA, con revisión humana y límites sobre los datos que puede manejar.';
+    }
+
+    const third = chosen[1].area === 'medicion'
+      ? 'Medir primero frecuencia y tiempo dedicado a tareas repetitivas para priorizar con evidencia.'
+      : 'Medir tiempo de ejecución, incidencias y calidad del proceso antes y después de implementar cambios.';
+
+    quizStage.classList.add('hidden');
+    results.classList.remove('hidden');
+    results.replaceChildren();
+
+    const head = document.createElement('div');
+    head.className = 'stage-head';
+    head.textContent = 'TU RESULTADO · DIAGNÓSTICO INICIAL';
+    results.appendChild(head);
+
+    const title = document.createElement('h3');
+    title.textContent = band;
+    results.appendChild(title);
+
+    const desc = document.createElement('p');
+    desc.textContent =
+      'Puntuación orientativa: ' + total +
+      ' de 13 puntos. Una puntuación más alta indica más señales de trabajo manual y posibles procesos para revisar; no mide por sí sola el ahorro posible.';
+    results.appendChild(desc);
+
+    const metric = document.createElement('div');
+    metric.className = 'metric';
+    metric.textContent =
+      'Área que has señalado: ' + primary.name +
+      '. Este resultado se basa exclusivamente en las cinco respuestas aportadas.';
+    results.appendChild(metric);
+
+    const blocks = [
+      ['Primera propuesta', primary.action],
+      ['Segunda propuesta', secondary],
+      ['Cómo comprobar el impacto', third]
+    ];
+
+    blocks.forEach(([name, copy]) => {
+      const div = document.createElement('div');
+      div.className = 'result-block';
+
+      const h = document.createElement('h3');
+      h.textContent = name;
+
+      const p = document.createElement('p');
+      p.textContent = copy;
+
+      div.append(h, p);
+      results.appendChild(div);
+    });
+
+    const services = document.createElement('div');
+    services.className = 'result-block';
+
+    const sh = document.createElement('h3');
+    sh.textContent = 'Servicios de Liventis que pueden encajar';
+
+    const sp = document.createElement('p');
+
+    sp.textContent =
+      area === 'clientes'
+        ? 'Asistentes inteligentes, automatización de consultas, recepcionistas IA y análisis de procesos.'
+        : area === 'ventas'
+          ? 'Automatización comercial, integración CRM, seguimiento de presupuestos y análisis de procesos.'
+          : area === 'operaciones'
+            ? 'Automatización documental, integraciones, agendas y consultoría de productividad.'
+            : 'Auditoría de automatización, identificación de casos de uso y evaluación de IA aplicada.';
+
+    services.append(sh, sp);
+    results.appendChild(services);
+
+    const note = document.createElement('p');
+    note.className = 'muted';
+    note.textContent =
+      'Evaluación orientativa. No implica auditoría técnica ni estimación económica verificada. Las respuestas no se guardan automáticamente en HubSpot en esta versión.';
+    results.appendChild(note);
+
+    const cta = document.createElement('div');
+    cta.className = 'result-cta';
+
+    const ctitle = document.createElement('h3');
+    ctitle.textContent = 'Transforma la oportunidad en un plan viable';
+
+    const cp = document.createElement('p');
+    cp.textContent =
+      'Podemos revisar tus procesos, validar las propuestas y definir las prioridades de implementación.';
+
+    const a = document.createElement('a');
+    a.className = 'pill gold';
+    a.href = 'https://calendly.com/aranzazurodriguez';
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'Reservar reunión estratégica';
+
+    cta.append(ctitle, cp, a);
+    results.appendChild(cta);
+
+    results.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
 })();
-</script><script src="https://js-eu1.hsforms.net/forms/embed/149636353.js" defer></script></body></html>
+</script>
+
+<script src="https://js-eu1.hsforms.net/forms/embed/149636353.js" defer></script>
+</body>
+</html>
